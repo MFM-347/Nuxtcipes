@@ -5,6 +5,7 @@ Nuxtcipes is a recipe application based on the dummyJSON API, created by [MFM-34
 ## Credits
 
 Created by [John Komarnicki](https://github.com/johnkomarnicki)
+
 Updated by [@MFM-347](https://github.com/mfm-347).
 
 ## License

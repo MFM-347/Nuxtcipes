@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxtcipes",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,8 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "start": "npx prettier -w . && cls && npm run dev"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxt/icon": "^1.10.2",

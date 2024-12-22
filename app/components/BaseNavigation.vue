@@ -1,11 +1,9 @@
-<script setup lang="ts"></script>
-
 <template>
   <header class="py-2 border-b">
     <nav class="flex container items-center">
       <NuxtLink to="/" class="flex gap-1 items-start sm:items-center">
         <NuxtImg
-          sizes="20px md:48px"
+          class="w-8 sm:w-12"
           src="/icon-green.png"
           format="webp"
           alt="Nuxtcipes Logo"

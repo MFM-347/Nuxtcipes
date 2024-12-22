@@ -5,7 +5,7 @@
     <nav class="flex container items-center">
       <NuxtLink to="/" class="flex gap-1 items-start sm:items-center">
         <NuxtImg
-          sizes="24px md:56px"
+          sizes="20px md:48px"
           src="/icon-green.png"
           format="webp"
           alt="Nuxtcipes Logo"

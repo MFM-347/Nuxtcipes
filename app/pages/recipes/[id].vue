@@ -19,7 +19,7 @@ useSeoMeta({
   ogTitle: data.value?.name,
   ogDescription: "Recipes for you to cook!",
   ogImage: data.value?.image,
-  ogUrl: `http:localhost:3000/recipes/${id}`,
+  ogUrl: `https://recipes-347.vercel.app/recipes/${id}`,
   twitterTitle: data.value?.name,
   twitterDescription: "Recipes for you to cook!",
   twitterImage: data.value?.image,

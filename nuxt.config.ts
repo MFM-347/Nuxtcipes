@@ -1,34 +1,43 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
   future: {
     compatibilityVersion: 4,
   },
-  devtools: { enabled: true },
   experimental: {
+    sharedPrerenderData: false,
     compileTemplate: true,
+    resetAsyncDataToUndefined: true,
     templateUtils: true,
     relativeWatchPaths: true,
-    resetAsyncDataToUndefined: true,
     defaults: {
       useAsyncData: {
         deep: true,
       },
     },
   },
-  image: {
-    domains: ["https://dummyjson.com/"],
-  },
   unhead: {
     renderSSRHeadOptions: {
       omitLineBreaks: false,
     },
   },
+  site: {
+    url: "https://nuxtcipes.vercel.app",
+    name: "Nuxtcipes",
+  },
+  sitemap: {
+    sources: ["/api/__sitemap__/urls"],
+  },
+  image: {
+    domains: ["https://cdn.dummyjson.com"],
+  },
+  devtools: { enabled: true },
   modules: [
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/google-fonts",
     "@nuxt/icon",
+    "@nuxtjs/google-fonts",
     "@nuxt/image",
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
   ],
   googleFonts: {
     families: {

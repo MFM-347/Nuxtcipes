@@ -6,7 +6,8 @@ export default defineSitemapEventHandler(async () => {
   const res: RecipeResponse = await $fetch(
     "https://dummyjson.com/recipes?limit=12",
   );
-  const sitemapUrl: SitemapUrlInput[] = res.recipes.map((item: any) => ({
+  const sitemapUrls: SitemapUrlInput[] = res.recipes.map((item: any) => ({
     loc: `/recipes/${item.id}`,
   }));
+  return sitemapUrls;
 });

@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: "https://nuxtcipes.vercel.app",
+    url: "https://recipes-347.vercel.app",
     name: "Nuxtcipes",
   },
   sitemap: {

@@ -1,4 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: "About",
+  description: "Learn about nuxtcipes",
+  ogTitle: "About - Nuxtcipes",
+  ogDescription: "Recipes for you to cook!",
+  ogImage: "/nuxt-course-hero.png",
+  ogUrl: `https://recipes-347.vercel.app`,
+  twitterTitle: "About - Nuxtcipes",
+  twitterDescription: "Learn about nuxtcipes",
+  twitterImage: "/nuxt-course-hero.png",
+  twitterCard: "summary",
+});
+</script>
 
 <template>
   <main>

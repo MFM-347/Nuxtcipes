@@ -1,5 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant hover (&:hover);
+
+@theme {
+  --color-dodgeroll-gold: #f79f1a;
+  --color-apple-green: #00981a;
+  --color-dire-wolf: #292727;
+}
+*:focus-visible {
+  @apply outline-offset-2 outline-dodgeroll-gold;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
 body {
   @apply bg-zinc-100 text-gray-900 dark:bg-zinc-900 dark:text-gray-100;
+  font-family: "Montserrat", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {

@@ -2,7 +2,7 @@
 import { type RecipeResponse } from "../../types/types";
 
 const { data, error } = await useFetch<RecipeResponse>(
-  "https://dummyjson.com/recipes?limit=12",
+  "https://dummyjson.com/recipes?limit=20",
 );
 
 useSeoMeta({
@@ -16,6 +16,9 @@ useSeoMeta({
   twitterDescription: "Recipes for you to cook!",
   twitterImage: "/nuxt-course-hero.png",
   twitterCard: "summary",
+});
+useHead({
+  titleTemplate: null,
 });
 </script>
 

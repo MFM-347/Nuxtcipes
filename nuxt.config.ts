@@ -19,9 +19,6 @@ export default defineNuxtConfig({
     url: "https://recipes-347.vercel.app",
     name: "Nuxtcipes",
   },
-  sitemap: {
-    sources: ["/api/__sitemap__/urls"],
-  },
   image: {
     domains: ["https://cdn.dummyjson.com"],
   },
